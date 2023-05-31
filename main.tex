@@ -150,18 +150,18 @@
 \begin{itemize}
     \item There are 12 problems in this question bank.
     \item You need to solve only those questions which are assigned to you during the exam.
-    \item Assume  signed/unsigned long long int or double based on the question.
+    \item Assume signed/unsigned long long int or double based on the question.
           %\item Overflow cases to be handled 
     \item Make suitable assumptions wherever necessary.
-    \item Tentative marks problem 1 to 6: 15 marks for each question; from problem 7 to 12: 25 marks for each.
-    \item Comments: Not necessary. But some comments to guide us in evaluations would help. Note: Only some basic comments are enough. Don’t add comments for each line. It would take too much of your time and would actually make it difficult for us to find the main parts of your code. So if adding comments, just add a few comments near the main parts of your code.
-    \item Naive solution is fine.However, the solution should be reasonable enough. It shouldn't be too complicated too.For example, if you are asked to sort, we don't expect you to use merge sort. You can use a naive algorithm like bubble sort which solves the problem in O($n^2$). But if you come up with something overly complicated like a O($n^{3}$) or O($n^4$) solution and as a result of which your code fails to run even on small/simple test cases, then that can attract penalties.
-    \item For some questions we have included function format for convenience but it is not necessary to follow them.
+    \item Tentative marks for problems 1 to 6: 15 marks each
+    \item Tentative marks for problems 7 to 12: 25 marks each
+    \item Comments: Not necessary. But some comments to guide us in evaluations would help. Note: Only some basic comments are enough. Don't add comments for each line. It would take too much of your time and would actually make it difficult for us to find the main parts of your code. So if adding comments, just add a few comments near the main parts of your code.
+    \item Naive solution is fine. However, the solution should be reasonable enough. It should not be too complicated either. For example, if you are asked to sort, we don't expect you to use merge sort. You can use a naive algorithm like bubble sort which solves the problem in O($n^2$). But if you come up with something overly complicated like a O($n^{3}$) or O($n^4$) solution and as a result of which your code fails to run even on small/simple test cases, then that can attract penalties.
+    \item For some questions we have included function format for convenience, but it is not necessary to follow them.
     \item You must strictly stick to the input and output formats.
     \item  Your C file can contain only inputs, outputs and memory allocations. Everything else should be in a function defined in assembly which will be invoked from C file.
     \item No need to handle overflow or invalid input cases unless explicitly asked to handle them in the question.
     \item For the questions requiring sorting, be thorough with the code of Bubble sort, Selection sort and insertion sort. You can be asked to code any of the three without giving choice.
-
 
           % \item Make suitable assumptions wherever needed. 
 
@@ -203,35 +203,37 @@
 %add section based on difficulty 
 
 
-\paragraph{\textcolor{red}{Problem 1: }}
-You are a lover of bacteria and you want to raise some bacteria in a box. Initially, the box is empty and each morning, you can put any number of bacteria into the box. And each night, every bacterium in the box will split into two bacterias. You hope to see \textbf{exactly x} bacteria in the box at some moment.
-What is the minimum number of bacteria you need to put into the box across those days.?   \\
+\newpage
+\paragraph{\textcolor{red}{Problem 1:}}
+You are a lover of bacteria, and you want to raise some bacteria in a box. Initially, the box is empty and each morning, you can put any number of bacteria into the box. And each night, every bacterium in the box will split into two bacteria. You hope to see \textbf{exactly x} bacteria in the box at some moment.
+What is the minimum number of bacteria you need to put into the box across those days.?
 
-\vspace*{0.3cm}
+\vspace*{0.5cm}
 
 \textbf{Input/Output Format}
 \begin{itemize}
-    \item  Input: X, No of bacterias you want.
+    \item  Input: X, No of bacteria you want.
     \item  Output: One integer, Answer.
 \end{itemize}
 
 
 \textbf{Sample Test Case}
 
-Input: 5 \\
-Output: 2\\
+Input: 5\\
+Output: 2
+\vspace*{0.5cm}
 
-\textbf{Explanation}- For the first sample, we can add one bacterium in the box in the first day morning and at the third morning there will be 4 bacteria in the box. Now we put one more resulting 5 in the box. We added 2 bacteria in the process so the answer is 2.\\
+\textbf{Explanation}- For the first sample, we can add one bacterium in the box in the first day morning and at the third morning there will be 4 bacteria in the box. Now we put one more resulting 5 in the box. We added 2 bacteria in the process. Therefore, the answer is 2.
+\vspace*{0.5cm}
 
 \textbf{Sample Test Case 2}
 
-Input : 8 \\
-Output : 1 \\
-
-\vspace*{0.3cm}
+Input : 8\\
+Output : 1
+\vspace*{0.5cm}
 %----------------------------------------------%
 
-\paragraph{\textcolor{red}{Problem 2: }}
+\paragraph{\textcolor{red}{Problem 2:}}
 Given a positive integer N, return an array of integers with all the integers from 1 to N. But for multiples of 3, the array should have -1 instead of the number, for multiples of 5, the array should have -2 instead of the number and for multiples of both 3 and 5, the array should have -3 instead of the number.
 
 \textbf{Input/Output Format}
@@ -243,23 +245,24 @@ Given a positive integer N, return an array of integers with all the integers fr
 
 \textbf{Sample Test Case}
 
-Input: 5 \\
-Output: 1 2 -1 4 -2\\
-\\
+Input: 5\\
+Output: 1 2 -1 4 -2
+\vspace*{0.5cm}
+
 Input: 17\\
 Output: 1 2 -1 4 -2 -1 7 8 -1 -2 11 -1 13 14 -3 16 17
-
 \vspace*{0.3cm}
 
 %----------------------------%
-\paragraph{\textcolor{red}{Problem 3: }}
-Given a number N, check if its a palindrome or not.? Palindromes are those numbers which read the same backward and forward. 1, 363, 1331 are palindromes while 10, 456 are not.
+\newpage
+\paragraph{\textcolor{red}{Problem 3:}}
+Given a number N, check if it is a palindrome or not.? Palindromes are those numbers which read the same backward and forward. 1, 363, 1331 are palindromes while 10, 456 are not.
 
 
 \textbf{Input/Output Format}
 \begin{itemize}
     \item  Input: N, Single Integer to be checked.
-    \item  Output: \textbf{True}, if its a palindrome; \textbf{False}, if not.
+    \item  Output: \textbf{True}, if it is a palindrome; \textbf{False}, if not.
     \item  Note: Output case does not matter, TrUe, true, TRUE all are acceptable.
 \end{itemize}
 
@@ -267,15 +270,15 @@ Given a number N, check if its a palindrome or not.? Palindromes are those numbe
 \textbf{Sample Test Case}
 
 Input:  13931\\
-Output: True\\
-\\
-Input: 69\\
-Output: False\\
+Output: True
+\vspace*{0.3cm}
 
+Input: 69\\
+Output: False
 \vspace*{0.3cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 4: }}
+\paragraph{\textcolor{red}{Problem 4:}}
 Given two integers N and M. Find the GCD of N and M using the Euclidean Algorithm.
 
 \textbf{Input/Output Format}
@@ -287,16 +290,18 @@ Given two integers N and M. Find the GCD of N and M using the Euclidean Algorith
 
 \textbf{Sample Test Case}
 
-Input:  13 3 \\
-Output: 1\\
+Input:  13 3\\
+Output: 1
+\vspace*{0.5cm}
 
 Input : 15 6\\
-Output: 3\\
-\vspace*{0.3cm}
+Output: 3
+\vspace*{0.5cm}
 
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 5: }}
+\newpage
+\paragraph{\textcolor{red}{Problem 5:}}
 Given an array of binary digits i.e. array consisting only of 0s and 1s, rearrange the elements of array in such a way that all the 0s come before 1s in the array. You need to do this in linear time.\\
 \textbf{Hint: } Use Countsort.
 
@@ -312,22 +317,22 @@ Input:\\
 5 \\
 0 1 1 0 1  \\
 Output:\\
-0 0 1 1 1 \\
-\\
+0 0 1 1 1
+\vspace*{0.5cm}
+
 Input:\\
 4\\
 0 1 0 0 \\
 Output:\\
-0 0 0 1 \\
-
-\vspace*{0.3cm}
+0 0 0 1
+\vspace*{0.5cm}
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 6: }}
+\paragraph{\textcolor{red}{Problem 6:}}
 Given a 2-D array of non-negative integers, find the sum of all those integers which are divisible by 2 but not divisible by 3.
 
 \textbf{Input/Output Format}
 \begin{itemize}
-    \item  Input: M N, where M is number of rows and N is number of columns. Next M lines contain N integers each where $i^{th}$ line represents the elements of  $i^{th}$ row of matrix.
+    \item  Input: M N, where M is the number of rows and N is the number of columns. Next M lines contain N integers each where $i^{th}$ line represents the elements of  $i^{th}$ row of matrix.
     \item  Output: Single integer which is sum of desired numbers.
 \end{itemize}
 
@@ -338,14 +343,14 @@ Input:\\
 1 2 3\\
 4 2 0\\
 5 6 8\\
-Output: 16\\
-
-\vspace*{0.3cm}
+Output: 16
+\vspace*{0.5cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 7: }}
-Given an array A of size N and a positive integer B, pick \textbf{x} elements from the left end of the array and \textbf{y} elements from the right end of the array, where \textbf{x + y = B}, such that sum of those elements is the \textbf{maximum possible sum} that can be achieved while meeting the above mentioned constraints.\\
-\textbf{Note : }0 \leq x,y \leq B.
+\newpage
+\paragraph{\textcolor{red}{Problem 7:}}
+Given an array A of size N and a positive integer B, pick \textbf{x} elements from the left end of the array and \textbf{y} elements from the right end of the array, where \textbf{x + y = B}, such that sum of those elements is the \textbf{maximum possible sum} that can be achieved while meeting the constraints mentioned above.\\
+\textbf{Note:} $0 \leq x,y \leq B$.
 
 \textbf{Input/Output Format}
 \begin{itemize}
@@ -355,24 +360,24 @@ Given an array A of size N and a positive integer B, pick \textbf{x} elements fr
 
 \textbf{Sample Test Case}
 
-Input:  \\
+Input:\\
 5 3\\
 5 -2 3 1 2 \\
 Output: \\
-8\\
+8
+\vspace*{0.5cm}
 
 Input: \\
 2 1\\
 1 2 \\
 Output: \\
 2
-
-\vspace*{0.3cm}
+\vspace*{0.5cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 8: }}
+\paragraph{\textcolor{red}{Problem 8:}}
 Given an array of N integers, sort the array into a wave-like array and return it. In other words, arrange the elements into a sequence such that $a_1$ >= $a_2$ <= $a_3$ >= $a_4$ ......\\
-\textbf{Note : }If multiple answers are possible, return the lexicographically smallest one.\\
+\textbf{Note:} If multiple answers are possible, return the lexicographically smallest one.\\
 \textbf{Input/Output Format}
 \begin{itemize}
     \item  Input: Has two lines. First line contains single integer N, size of the array. Next line contains N space-separated integers which are elements of the array.
@@ -385,17 +390,19 @@ Input:\\
 4\\
 1 2 3 4 \\
 Output:\\
-2 1 4 3\\
+2 1 4 3
+\vspace*{0.5cm}
 
 Input:\\
 2\\
 1 2\\
 Output:\\
 2 1
-\vspace*{0.3cm}
+\vspace*{0.5cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 9: }}
+\newpage
+\paragraph{\textcolor{red}{Problem 9:}}
 Given an \textbf{unsorted} array of N integers, find the first missing \textbf{positive} integer.
 
 \textbf{Input/Output Format}
@@ -406,78 +413,77 @@ Given an \textbf{unsorted} array of N integers, find the first missing \textbf{p
 
 \textbf{Sample Test Case}
 
-Input: \\
+Input:\\
 3\\
 2 1 0\\
 Output: \\
-3\\
+3
+\vspace*{0.5cm}
 
-Input: \\
+Input:\\
 4\\
 3 4 -1 1\\
 Output: \\
 2
-
-
-\vspace*{0.3cm}
+\vspace*{0.5cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 10: }}
+\paragraph{\textcolor{red}{Problem 10:}}
 There are n people standing in line, each looking left or right. Each person counts the number of people in the direction they are looking. The value of the line is sum of each person's count. You are given initial arrangement of people in the line. For \textbf{each k from 1 to n}, determine the maximum value of line if you can change the direction of \textbf{at most} k people.
 
 \textbf{Input/Output Format}
 \begin{itemize}
-    \item  Input: Has two lines. First line contains a single integer N, size of the array. Next line contains N space-separated integers which are elements of the array. Each integer can either be 0 or 1.\\ \textbf{0 - Looking left, 1 - Looking right}.
-    \item  Output: N integers, $i^{th}$ integer is the maximum value of line if you can change direction of atmost i people for each i from 1 to n.
+    \item  Input: Has two lines. First line contains a single integer $N$, size of the array. Next line contains $N$ space-separated integers which are elements of the array. Each integer can either be 0 or 1.\\ \textbf{0 - Looking left, 1 - Looking right}.
+    \item  Output: $N$ integers, $i^{th}$ integer is the maximum value of line if you can change direction of at most $i$ people for each $i$ from $1$ to $n$.
 \end{itemize}
 
 \textbf{Sample Test Case}
 
-Input: \\
+Input:\\
 3\\
 0 0 1\\
-Output: 3 5 5\\
-\\
+Output: 3 5 5
+\vspace*{0.5cm}
+
 Input: \\
 9\\
 0 1 0 1 0 1 0 1 0\\
 Output:\\
 44 50 54 56 56 56 56 56 56\\
-
-
-\vspace*{0.3cm}
+\vspace*{0.5cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 11: }}
-You are given array a of length n. You can perform the following operation as many number of times as you want:\\
-Pick two integers i and j ($1 \leq i,j \leq n$) such that $a_i + a_j$ \textbf{is odd}, then swap $a_i$ and $a_j$\\
-Output lexicographically  smallest array possible which can be obtained by performing above operation any number of times.\\
-\\
+\newpage
+\paragraph{\textcolor{red}{Problem 11:}}
+You are given array $a$ of length $N$. You can perform the following operation as many number of times as you want:\\
+Pick two integers i and j ($1 \leq i,j \leq N$) such that $a_i + a_j$ \textbf{is odd}, then swap $a_i$ and $a_j$\\
+Output lexicographically smallest array possible which can be obtained by performing above operation any number of times.
+\vspace*{0.5cm}
 
 \textbf{Input/Output Format}
 \begin{itemize}
     \item  Input: Has two lines. First line contains a single integer N, size of the array. Next line contains N space-separated integers which are elements of the array.
     \item  Output: Lexicographically smallest array which can be obtained by performing above operations any number of times.
-    \item \textbf{Note: } No need to minimise the number of operations, just  obtain the lexicographically smallest array possible.
+    \item \textbf{Note: } No need to minimize the number of operations, just  obtain the lexicographically smallest array possible.
 \end{itemize}
 
 \textbf{Sample Test Case}
 
-Input: \\ 3 \\ 4 1 7\\
-Output:\\ 1 4 7\\
+Input:\\ 3 \\ 4 1 7\\
+Output:\\ 1 4 7
+\vspace*{0.5cm}
 
-Input: \\ 4 \\ 4 2 6 8 \\
-Output:\\ 4 2 6 8 \\
-
-\vspace*{0.3cm}
+Input:\\ 4 \\ 4 2 6 8 \\
+Output:\\ 4 2 6 8
+\vspace*{0.5cm}
 
 %----------------------------------------------%
-\paragraph{\textcolor{red}{Problem 12: }}
-You are asked to take a group photo of 2n people. The $i^{th}$ person has height $h_i$ units. To do so, you need to arrange people in two rows of n people each. To ensure that everyone is seen properly, you must arrange them in such a way that $j_th$ person of the back row must be atleast  x units taller than the $j_th$ person of the front row.
+\paragraph{\textcolor{red}{Problem 12:}}
+You are asked to take a group photo of $2N$ people. The $i^{th}$ person has height $h_i$ units. To do so, you need to arrange people in two rows of $N$ people each. To ensure that everyone is seen properly, you must arrange them in such a way that $j^{th}$ person of the back row must be at least $X$ units taller than the $j^{th}$ person of the front row.
 
 \textbf{Input/Output Format}
 \begin{itemize}
-    \item  Input: Has two lines. First line contains two integers N (size of the array) and X(The required height difference.). Next line contains 2N space-separated integers which are heights of the people being photographed.
+    \item  Input: Has two lines. First line contains two integers $N$ (size of the array) and $X$ (the required height difference.). Next line contains $2N$ space-separated integers which are heights of the people being photographed.
     \item  Output: \textbf{YES}, if such an arrangement exists; \textbf{NO} if no such arrangement exists. Case of Yes and No does not matter. YES, yes, YeS all are acceptable.
 \end{itemize}
 
@@ -487,21 +493,21 @@ Input:\\
 3 6 \\
 1 9 3 12 16 10\\
 Output:\\
-YES\\
+YES
+\vspace*{0.5cm}
 
-Explanation: Front row can contain : 3 1 10 and back row can contain  9  12 16.\\
+Explanation: Front row can contain : 3 1 10 and back row can contain  9  12 16.
+\vspace*{0.5cm}
 
 Input:\\
 3 1\\
 2 5 2 2 2 5\\
-\\
 Output:\\
-NO\\
+NO
+\vspace*{0.5cm}
 
 Explanation: No such arrangement exists.
-
-
-\vspace*{0.3cm}
+\vspace*{0.5cm}
 
 %----------------------------------------------%
 \begin{center}
